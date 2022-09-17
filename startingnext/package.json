@@ -1,4 +1,24 @@
 {
+  "products": [
+    {
+      "id": 1,
+      "title": "Product 1",
+      "price": 700,
+      "description": "Description 1"
+    },
+    {
+      "id": 2,
+      "title": "Product 2",
+      "price": 1050,
+      "description": "Description 2"
+    },
+    {
+      "id": 3,
+      "title": "Product 3",
+      "price": 2600,
+      "description": "Description 3"
+    }
+  ],
   "name": "startingnext",
   "version": "0.1.0",
   "private": true,
@@ -6,9 +26,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "serve-json": "json-server --watch db.json --port 4000"
   },
   "dependencies": {
+    "json-server": "^0.17.0",
     "next": "12.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
