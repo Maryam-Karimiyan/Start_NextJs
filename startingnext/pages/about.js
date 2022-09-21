@@ -1,7 +1,12 @@
+import Head from 'next/head'
 export default function about() {
   return (
     <div>
-        <h1>
+      <Head>
+        <title>About this Website</title>
+        <meta name='descriotion' content='free tuts next'/>
+      </Head>
+        <h1 className="content">
             About Us
         </h1>
     </div>
